@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Layout */
+body {
+    display: flex;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffdd57;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #ffdd57;
+    color: #333;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 270px;
+    padding: 30px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #ff7f50;
+    border-bottom: 2px solid #ff7f50;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Typography */
+p, li {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+/* Code Example Styling */
+pre {
+    background-color: #f4f4f4;
+    border-left: 4px solid #ff7f50;
+    padding: 15px;
+    font-size: 16px;
+    overflow-x: auto;
+    margin: 20px 0;
+    color: #333;
+}
+
+code {
+    color: #d63384;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f50;
+}
+
+/* Result Section Styling */
+#result {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .main-content {
+        margin-left: 220px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        margin: 0;
+        padding: 20px;
+    }
+}
